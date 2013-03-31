@@ -88,7 +88,8 @@ function loadText(){
     geocoder.geocode( { 'address': address}, function(results, status) {
       if (status == google.maps.GeocoderStatus.OK) {
         map.setCenter(results[0].geometry.location);
-	//こっちはカフェを検索する処理
+	//こっちは
+カフェを検索する処理
   var queryValue = document.getElementById("search_box").value;
   var options = {bounds: map.getBounds(), keyword: queryValue};
   var service = new google.maps.places.PlacesService(map);
